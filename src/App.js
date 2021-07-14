@@ -28,7 +28,6 @@ class App extends React.Component{
     }
     else{
       count = 0;
-      this.setState({count : count});
     }
     return {__html: count};
   }
