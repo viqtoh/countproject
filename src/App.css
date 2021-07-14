@@ -57,8 +57,7 @@
   border-radius: 5px;
 }
 .field{
-  margin-top: 5%;
-  width: 100%;
+  width: 40%;
   height: 4vh;
   border: 1px solid white;
   border-radius: 8px;
@@ -66,11 +65,48 @@
   background-color: black;
   padding: 10px;
 }
-.subbut{
-  color: white;
-  background-color: rgba(0,0,0,0);
-  border: 1px solid white;
-  padding: 3px;
-  border-radius: 5px;
-  margin-top: 10px;
+@media screen and (max-width: 800px){
+  .Dec{
+    display: inline;
+    margin-left: 2%;
+    color: red;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid red;
+    padding: 4px;
+    font-size: 100%;
+    border-radius: 5px;
+    width: 46%;
+    height: 35px;
+  }
+  .Inc{
+    display: inline;
+    margin-right: 2%;
+    color: blue;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid blue;
+    padding: 4px;
+    font-size: 100%;
+    border-radius: 5px;
+    width: 46%;
+    height: 35px;
+  }
+  .butDiv{
+    width: 90%;
+  }
+  .field{
+    width: 80%;
+  }
+  .App-header{
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 98%;
+  }
+  #root{
+    background-color: black;
+    padding: 1%;
+  }
+}
+
+.inline{
+  display: inline-block;
 }

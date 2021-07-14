@@ -43,9 +43,9 @@ class App extends React.Component{
   render(){
     return (
       <div className="App">
-        <header className="App-header"><p></p>
+        <header className="App-header">
           <p>Range: {range}</p>
-          <p dangerouslySetInnerHTML = {this.inc(0)}></p>
+          <p className='inline'>Count: <p className='inline' dangerouslySetInnerHTML = {this.inc(0)}></p></p>
           <div className="butDiv">
           <button
             className="Inc"
@@ -62,9 +62,9 @@ class App extends React.Component{
             onClick={() => this.inc(3)}
           >
             Decrement--
-          </button><br></br>
+          </button>
+          </div><br></br>
           <input className='field' onKeyUp={() => this.rangeChange()} id='field' type='text' placeholder='Range to count...'></input>
-          </div>
         </header>
       </div>
     );
