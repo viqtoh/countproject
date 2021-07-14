@@ -23,12 +23,6 @@ class App extends React.Component{
       count =count -range;
       this.setState({count : count});
     }
-    if(count){
-
-    }
-    else{
-      count = 0;
-    }
     return {__html: count};
   }
   rangeChange(){
